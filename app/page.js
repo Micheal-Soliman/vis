@@ -33,10 +33,10 @@ export default function HomePage() {
         </motion.nav>
 
         {/* Main Content */}
-        <main className="max-w-4xl mx-auto px-4 py-8">
+        <main className="max-w-4xl mx-auto px-4">
           {/* Hero Section Fullscreen */}
-          <section className="min-h-screen flex flex-col justify-center items-center">
-            <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-2xl p-8 flex flex-col items-center w-full max-w-6xl">
+          <section className="flex flex-col justify-center items-center mb-16">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-2xl px-8 py-6 flex flex-col items-center w-full max-w-6xl h-full justify-center">
               {/* Hero Banner */}
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -83,7 +83,7 @@ export default function HomePage() {
                 className="text-center mb-12"
               >
                 <a
-                  href="https://wa.me/201143859282"
+                  href="https://wa.me/201023130203"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -136,7 +136,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <a
-                href="https://wa.me/201143859282"
+                href="https://wa.me/201023130203"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -177,7 +177,115 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-
+          {/* Course Outline Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.2 }}
+            className="mb-12 bg-white/90 rounded-2xl shadow-2xl p-8"
+          >
+            <h2 className="text-3xl font-extrabold text-center mb-8">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+                Feasibility Mastermind – Course Outline
+              </span>
+            </h2>
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6 mb-8">
+              <div className="flex-1 text-lg text-gray-800">
+                <p className="mb-2"><span className="font-bold">🎓 Study Mode:</span> <span className="text-blue-700">Live Interactive Online Sessions</span></p>
+                <p className="mb-2"><span className="font-bold">📅 Duration:</span> <span className="text-blue-700">2–3 hours per session, twice a week, for 3 weeks</span></p>
+                <p className="mb-2"><span className="font-bold">📘 What You Will Learn:</span> <span className="text-blue-700">A complete, hands-on system to assess, validate, and build viable business ideas using modern frameworks, financial modeling, and AI tools</span></p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Executive Summary */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl shadow-lg p-6 border-l-4 border-blue-400"
+              >
+                <h3 className="text-xl font-bold mb-3 text-blue-700">1. Executive Summary</h3>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  <li>Project concept overview</li>
+                  <li>Main business purpose</li>
+                  <li>Objective setting</li>
+                  <li>Key financial ratios & indicators</li>
+                </ul>
+              </motion.div>
+              {/* Marketing Study */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl shadow-lg p-6 border-l-4 border-red-400"
+              >
+                <h3 className="text-xl font-bold mb-3 text-red-700">2. Marketing Study</h3>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  <li>Market understanding & customer needs</li>
+                  <li>Segmentation – Targeting – Positioning (STP)</li>
+                  <li>End-user segmentation criteria (based on service outputs)</li>
+                  <li>Service characteristics and differentiation</li>
+                  <li>The 4Ps (Product, Price, Place, Promotion)</li>
+                  <li>Pricing strategies and models</li>
+                  <li>SWOT analysis</li>
+                </ul>
+              </motion.div>
+              {/* Legal Study */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl shadow-lg p-6 border-l-4 border-blue-400"
+              >
+                <h3 className="text-xl font-bold mb-3 text-blue-700">3. Legal Study</h3>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  <li>Legal structure and business compliance</li>
+                  <li>Industry-specific regulations</li>
+                  <li>Licensing & ownership conditions</li>
+                </ul>
+              </motion.div>
+              {/* Operational & Technical Study */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl shadow-lg p-6 border-l-4 border-red-400"
+              >
+                <h3 className="text-xl font-bold mb-3 text-red-700">4. Operational & Technical Study</h3>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  <li>Operational strategies</li>
+                  <li>Efficiency & resource utilization</li>
+                  <li>Design capacity vs. effective capacity vs. required capacity</li>
+                  <li>In-house vs. outsourcing decisions</li>
+                  <li>Cost-volume analysis</li>
+                  <li>Operational process types</li>
+                  <li>Demand forecasting methods</li>
+                </ul>
+              </motion.div>
+              {/* Financial & Economic Study */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl shadow-lg p-6 border-l-4 border-blue-400 md:col-span-2"
+              >
+                <h3 className="text-xl font-bold mb-3 text-blue-700">5. Financial & Economic Study</h3>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  <li>Accounting equation fundamentals</li>
+                  <li>Understanding financial statements</li>
+                  <li>Initial cash outflow estimation</li>
+                  <li>Incremental cash flow analysis</li>
+                  <li>Tax shield approach</li>
+                  <li>Time value of money concepts</li>
+                  <li>Net present value (NPV) and Payback period</li>
+                  <li>Weighted Average Cost of Capital (WACC)</li>
+                  <li>Capital budgeting techniques</li>
+                  <li>What-if scenario analysis</li>
+                  <li>Excel financial modeling applications with integrated AI tools</li>
+                </ul>
+              </motion.div>
+            </div>
+          </motion.div>
 
 
           {/* FAQ Section */}
@@ -221,13 +329,22 @@ export default function HomePage() {
             <div className="w-full md:w-2/3 flex flex-col gap-3 md:gap-5">
               <div>
                 <h2 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent mb-2 font-cairo text-left ltr">Mohamed Elsawaf</h2>
-                <p className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent text-lg md:text-2xl font-semibold mb-4 font-cairo text-left ltr">Bachelor's degree in accounting faculty of commerce mansoura university</p>
+                <div className="mb-4">
+                  <h3 className="text-lg md:text-2xl font-semibold text-blue-700 flex items-center gap-2"><span className="text-2xl">🎓</span> Education</h3>
+                  <ul className="list-disc pl-6 mt-2 space-y-1 text-gray-800 text-base md:text-lg">
+                    <li>Bachelor’s Degree in Accounting – Faculty of Commerce, Mansoura University</li>
+                    <li>MBA in Marketing – Arab Academy for Science, Technology & Maritime Transport (AAST)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-2xl font-semibold text-blue-700 flex items-center gap-2"><span className="text-2xl">💼</span> Experience</h3>
+                  <ul className="list-disc pl-6 mt-2 space-y-1 text-gray-800 text-base md:text-lg">
+                    <li>Over 15 years of professional experience</li>
+                    <li>Primary Sector: Real Estate Development</li>
+                    <li>Additional Expertise: Retail</li>
+                  </ul>
+                </div>
               </div>
-              <ul className="space-y-2 text-sm md:text-base font-cairo text-left">
-                <li className="flex items-start gap-2"><span className="text-green-400 text-xl mt-1">✔</span> <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">mba degree in marketing aast university
-                </span></li>
-                <li className="flex items-start gap-2"><span className="text-green-400 text-xl mt-1">✔</span> <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">15 y of experience main sector ( real estate development ) other , retail</span></li>
-              </ul>
             </div>
           </motion.section>
 
@@ -256,7 +373,7 @@ export default function HomePage() {
 
             <div className="text-center">
               <a
-                href="https://wa.me/201143859282"
+                href="https://wa.me/201023130203"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -278,7 +395,7 @@ export default function HomePage() {
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-blue-600 to-red-600 text-white px-8 py-4 rounded-lg text-xl font-bold hover:from-blue-700 hover:to-red-700 transition-all duration-300 shadow-lg"
                 >
-                  I want to join the feasibility program
+                  I want to join the feasibility mastermind program
                 </motion.button>
               </a>
             </div>
